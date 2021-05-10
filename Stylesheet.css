@@ -1,16 +1,11 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* header */
 * {
   box-sizing: border-box;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color:white ;
-  position :fixed;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 5px 5px rgb(131, 131, 131);
 }
 
 a {
@@ -20,7 +15,6 @@ a {
 .logo{
   width: 200px;
   height: 65px;
-  padding-bottom:10px;
 }
 
 .header-left {
@@ -30,7 +24,6 @@ a {
 
 .header-right {
   float: right;
-  padding-bottom: 10px;
 }
 
 .header-right a {
@@ -64,6 +57,13 @@ a {
   justify-content: space-between;
   padding: 0 50px;
   align-items: center;
+  height: 65px;
+  width: 100%;
+  background-color:white ;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 5px 5px rgb(131, 131, 131);
 }
 
 /* top wrapper */
@@ -73,11 +73,9 @@ a {
     background-size: cover;
     color: rgb(41, 40, 40);
     text-align: left;
-    font-family: 'Segoe UI';
 }
 
 .container1 {
-    /* max-width: 1170px; */
     width: 100%;
     padding-left: 150px;
     margin: 0 auto;
@@ -125,11 +123,6 @@ a {
 
 
 /* body */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
 @keyframes move {
     from{background-color: black;}
     to{background-color: #F6F8FD;}
@@ -200,8 +193,6 @@ body {
 
 .button{
     color: white;
-    /* font-weight: bold;
-    font-size: larger; */
     opacity: 0.85;
     padding: 12px 38px;
     background-color: #000000;
@@ -220,6 +211,10 @@ body {
     box-shadow: none;
 }
 
+.download p{
+  font-size: 18px;
+}
+
 .download{
     padding-top: 50px;
     padding-bottom: 20px;
@@ -231,9 +226,22 @@ footer {
   padding: 20px;
   text-align: center;
   background: white;
+  height: 65px;
 }
 
 .menu-icon{
   display:none;
 }
 
+footer a {
+  padding: 0 25px;
+  color: rgb(82, 82, 82);
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.footer-click:hover {
+  text-decoration: underline;
+  color: black;
+}
