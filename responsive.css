@@ -20,6 +20,11 @@
  .menu-icon{
     display:none;
   }
+  
+    footer{
+    display:flex;
+    justify-content:center;
+  }
 }
 
 /* Untuk Smartphone */
